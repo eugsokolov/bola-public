@@ -24,7 +24,7 @@
 		color: #000;
 	}
 	.banner{
-		background: url(images/bg2.jpg) no-repeat center;
+		background: url(images/bg.jpg) no-repeat center;
 		background-size: cover;
 	}
 	.about{}
@@ -144,4 +144,12 @@
 	.social a:last-of-type{
 		padding-right: 0;
 	}
+
+	.smaller-text {
+		font-size:8px;
+	}
 	
+	.email-invalid {
+		display: none;
+		color: red;
+	}
