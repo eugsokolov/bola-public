@@ -13,8 +13,7 @@ function validateHuman(honeypot) {
 }
 
 function postData(data, onCompletion) {
-  // <!-- todo: put correct google script url -->
-  var url = 'https://script.google.com/macros/s/AKfycbzrkYN1RrZfcHPEoZduSRwFhdLny4stcXnoenTTPEhLVBSlqQZt/exec';
+  var url = 'https://script.google.com/macros/s/AKfycbzYiaucj5ncD8aSQAzPbQHmvPqMsgwZHxOFgWUmn161jtg8hOwJwhEsdMIxpMzniSbOwQ/exec'
   var xhr = new XMLHttpRequest();
   xhr.open('POST', url);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
