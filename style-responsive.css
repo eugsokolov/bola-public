@@ -7,7 +7,7 @@
 	}
 	.about p{
 		column-gap: 150px;
-		column-count: 2;
+		column-count: 1;
 	}
 	.contact{
 		padding: 0 40px;
@@ -79,7 +79,7 @@
 	.contact{padding: 0 25px;}
 	.about p{
 		column-gap: 30px;
-		column-count: 2;
+		column-count: 1;
 	}
 	.specs_items .item{flex-basis: 22%;}
 	.videoplayicon{width: 60px; height: 60px;border: 1px solid #fff;}

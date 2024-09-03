@@ -30,7 +30,7 @@
 	.about{}
 	.about p{
 		column-gap: 300px;
-		column-count: 2;
+		column-count: 1;
 	}
 	.videoplayicon{
 		width: 180px; height: 180px;
