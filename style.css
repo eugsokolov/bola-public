@@ -90,9 +90,10 @@
 		font-size:1.1vw;
 		font-family: 'Helvetica', sans-serif;
 		background: var(--color-blue-1);
-		padding: 2vw;
+		padding: 1.25vw;
 		border: none;
 		width: 50%;
+		text-align: center;
 	}
 	.specs .tablewrap table tr:nth-of-type(2n) th{
 		background: #eee;
@@ -104,9 +105,10 @@
 		background: var(--color-blue-1);
 		font-size:1.1vw;
 		font-family: 'Helvetica', sans-serif;
-		padding: 2vw;
+		padding: 1.25vw;
 		border: none;
 		width: 50%;
+		text-align: center;
 	}
 	.specs .tablewrap table tr:nth-of-type(2n) td{
 		background: #eee;
