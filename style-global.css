@@ -94,24 +94,7 @@
 
 
 	/* FONT FAMILY */
-	h1, h2, h3, h4, h5, h6, div, li, p, a, blockquote, input, textarea, button, select, td, th{font-family: 'Manrope';}
-	/* LINK THESE FONTS BEFORE USE */
-	.font_manrope{font-family: 'Manrope', sans-serif;}
-	.font_poppins{font-family: 'Poppins', sans-serif;}
-	.font_inter{font-family: 'Inter', sans-serif;}
-	.font_dmserifdisplay{font-family: 'DM Serif Display', serif;}
-	.font_playfairdisplay{font-family: 'Playfair Display', serif;}
-	.font_zillaslab{font-family: 'Zilla Slab', serif;}
-	.font_marcellus{font-family: 'Marcellus', serif;}
-	.font_rubik{font-family: 'Rubik', sans-serif;}
-	.font_quicksand{font-family: 'Quicksand', sans-serif;}
-	.font_nunito{font-family: 'Nunito', sans-serif;}
-	.font_arimo{font-family: 'Arimo', sans-serif;}
-	.font_cabin{font-family: 'Cabin', sans-serif;}
-	.font_fjalla{font-family: 'Fjalla One', sans-serif;}
-	.font_bebas_neue{font-family: 'Bebas Neue', cursive;}
-
-
+	h1, h2, h3, h4, h5, h6, div, li, p, a, blockquote, input, textarea, button, select, td, th{font-family: 'Helvetica';}
 
 	/* FONT SIZE */
 	.fs_200	{font-size:200px;}
@@ -206,7 +189,7 @@
 	.fs_4_0_rem  		{font-size:4rem;}		.fs_4_rem  		{font-size:4rem;}
 	.fs_4_5_rem  		{font-size:4.5rem;}
 	.fs_5_0_rem  		{font-size:5rem;}		.fs_5_rem  		{font-size:5rem;}
-	.fs_5_6_rem  		{font-size:5.5rem;}
+	.fs_5_5_rem  		{font-size:5.5rem;}
 	.fs_6_0_rem  		{font-size:6rem;}		.fs_6_rem  		{font-size:6rem;}
 	.fs_6_5_rem  		{font-size:6.5rem;}
 	.fs_7_0_rem  		{font-size:7rem;}		.fs_7_rem  		{font-size:7rem;}
@@ -247,6 +230,7 @@
 	/* FONT WEIGHT */
 	.f_bold{font-weight: bold;}
 	.f_normal{font-weight: normal;}
+	.f_200{font-weight: 200;}
 	.f_300{font-weight: 300;}
 	.f_400{font-weight: 400;}
 	.f_500{font-weight: 500;}
