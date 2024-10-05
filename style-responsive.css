@@ -83,6 +83,9 @@
 	}
 	.specs_items .item{flex-basis: 22%;}
 	.videoplayicon{width: 60px; height: 60px;border: 1px solid #fff;}
+	.specs .tablewrap{
+		width: 65vw
+	}
 }
 
 

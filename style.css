@@ -1,8 +1,6 @@
 	/* 4K:  */
 	header{padding: 80px;}
 	header.fixed{background: var(--orange-bg-color);}
-	a.logo img{}
-	a.logo img.logo-primary{}
 	a.logo img.logo-secondary{display: none;}
 	header.fixed a.logo img.logo-primary{display: none;}
 	header.fixed a.logo img.logo-secondary{display: block;}
@@ -27,7 +25,6 @@
 		background: url(images/bg.png) no-repeat center;
 		background-size: cover;
 	}
-	.about{}
 	.about p{
 		column-gap: 300px;
 		column-count: 1;
@@ -87,7 +84,7 @@
 	.specs .tablewrap table tr th{
 		text-align:left;
 		color:#fff;
-		font-size:1.1vw;
+		font-size:1.5vw;
 		font-family: 'Helvetica', sans-serif;
 		background: var(--color-blue-1);
 		padding: 1.25vw;
@@ -103,7 +100,7 @@
 		text-align:left;
 		color: white;
 		background: var(--color-blue-1);
-		font-size:1.1vw;
+		font-size:1.5vw;
 		font-family: 'Helvetica', sans-serif;
 		padding: 1.25vw;
 		border: none;
@@ -138,8 +135,6 @@
 	button{
 		padding: 40px 100px !important;
 		font-size: 40px !important;
-	}
-	.copyright{
 	}
 	.copyright a{
 		color: #000;
