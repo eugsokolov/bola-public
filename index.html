@@ -221,13 +221,21 @@
 					<div class="contactform style1">
 						<form id="gform" method="POST"
 					action="https://script.google.com/macros/s/AKfycbzYiaucj5ncD8aSQAzPbQHmvPqMsgwZHxOFgWUmn161jtg8hOwJwhEsdMIxpMzniSbOwQ/exec">
-							<input class="form-control" id="name" name="name" placeholder="Name*" type="text" required>
-							<div id="email-invalid-message" class="email-invalid">
-								Please enter a valid email!
+							<div class="dflex flex_wrap jc_sb">
+								<div class="w_100 fd_r">
+									<input class="form-control" id="name" name="name" placeholder="Name*" type="text" required>
+									<div id="email-invalid-message" class="email-invalid">
+										Please enter a valid email!
+									</div>
+									<input class="form-control" id="email" name="email" placeholder="Email Address*" type="email" required>
+								</div>
+								<div class="w_100">
+									<textarea id="comments" name="comments" placeholder="Enter Your Message" rows="3" required></textarea>
+								</div>
+								<div class="w_100">
+									<button type="submit" class="bg_white text_orange_1">Submit</button>
+								</div>
 							</div>
-							<input class="form-control" id="email" name="email" placeholder="Email Address*" type="email" required>
-							<textarea id="comments" name="comments" placeholder="Enter Your Message" rows="3" required></textarea>
-							<button type="submit" class="bg_white text_orange_1">Submit</button>
 						</form>
 						<div style="display:none;" id="thankyou_message">
 							<h2>Thanks for contacting us! <br>
