@@ -1,6 +1,5 @@
 @media(max-width:2200px){
 	.container{width:75%;}
-	header{padding: 40px;}
 	a.logo img{width: 260px;}
 	nav ul li{
 		margin-right: 60px;
@@ -9,14 +8,10 @@
 		column-gap: 150px;
 		column-count: 1;
 	}
-	.contact{
-		padding: 0 40px;
-	}
 	input, textarea{
 		max-width: 400px;
 		height: 60px !important;
 		font-size: 21px !important;
-		margin-right: 50px;
 		margin-bottom: 50px !important;
 	}
 	textarea{
@@ -25,7 +20,8 @@
 	}
 	button{
 		padding: 20px 50px !important;
-		font-size: 21px !important;
+		font-size: 24px !important;
+		font-weight: 800;
 	}
 	.videoplayicon{width: 160px; height: 160px;border: 1px solid #fff;}
 }
@@ -33,7 +29,6 @@
 
 
 @media(max-width:1600px){
-	header{padding: 30px;}
 	a.logo img{width: 160px;}
 	nav ul li{
 		margin-right: 40px;
@@ -76,7 +71,6 @@
 	header.fixed .navigation nav ul li.active a, header.fixed .navigation nav ul li a:hover{
 		border: 1px solid #fff;
 	}
-	.contact{padding: 0 25px;}
 	.about p{
 		column-gap: 30px;
 		column-count: 1;
@@ -93,6 +87,10 @@
 
 @media(max-width:640px){
 	.specs_items .item{flex-basis: 30%;}
+	a.logo{
+		width: 30%;
+		margin-left: 5vw;
+	}
 	input, textarea{
 		max-width: 200px;
 		height: 40px !important;

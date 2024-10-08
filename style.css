@@ -1,6 +1,11 @@
+	:root, :host {
+		--fa-style-family-brands: 'Helvetica';
+		--fa-font-brands: normal 400 1em/1 'Helvetica';
+	}
+
 	/* 4K:  */
-	header{padding: 80px;}
-	header.fixed{background: var(--orange-bg-color);}
+	header{padding: 7.5px;}
+	header.fixed{background: linear-gradient(to right, var(--color-orange-1) 30%, var(--color-orange-2) 100%);}
 	a.logo img.logo-secondary{display: none;}
 	header.fixed a.logo img.logo-primary{display: none;}
 	header.fixed a.logo img.logo-secondary{display: block;}
@@ -21,8 +26,12 @@
 	header.fixed nav ul li a{
 		color: white;
 	}
-	.banner{
+	.bg-banner{
 		background: url(images/bg.png) no-repeat center;
+		background-size: cover;
+	}
+	.bg-about{
+		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/about.jpeg');
 		background-size: cover;
 	}
 	.about p{
@@ -33,13 +42,12 @@
 		width: 180px; height: 180px;
 		border: 1px solid #fff;
 	}
+	.bg-specs{
+		background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/specs.jpeg');
+		background-size: cover;
+	}
 	.specs_items .item{flex-basis: 17%;}
 	.specs_items .item img{max-width: 50%;}
-	.contact{
-		padding: 0 80px;
-	}
-
-	
 	.specs{
 		float:left;
 		width:100%;
@@ -112,17 +120,31 @@
 		color: var(--color-blue-1);
 	}
 	.specs .tablewrap table tr td:hover{
-		background: #ddd;
+		background: var(--color-blue-2);
 	}
-	/* FEATURES AND SPECS */
 
+	.bg-desc1{
+		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/description-1.jpeg');
+		background-size: cover;
+	}
+	.bg-desc2{
+		background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/description-2.avif');
+		background-size: cover;
+	}
+	.bg-desc3{
+		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/description-4.jpeg');
+		background-size: cover;
+	}
+
+	.bg-orange-gradient {
+		background: linear-gradient(to right, var(--color-orange-1) 30%, var(--color-orange-2) 100%);
+	}
 
 	input, textarea{
 		width: 100%;
 		max-width: 500px;
 		height: 100px !important;
 		font-size: 40px !important;
-		margin-right: 50px;
 		margin-bottom: 50px !important;
 	}
 	textarea{
@@ -137,7 +159,7 @@
 		font-size: 40px !important;
 	}
 	.copyright a{
-		color: #000;
+		color: white;
 		border-bottom: 1px solid #000;
 	}
 	.social a{

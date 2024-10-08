@@ -94,7 +94,7 @@
 
 
 	/* FONT FAMILY */
-	h1, h2, h3, h4, h5, h6, div, li, p, a, blockquote, input, textarea, button, select, td, th{font-family: 'Helvetica';}
+	h1, h2, h3, h4, h5, h6, div, li, p, a, blockquote, input, textarea, button, select, option, td, th{font-family: 'Helvetica';}
 
 	/* FONT SIZE */
 	.fs_200	{font-size:200px;}
@@ -316,6 +316,11 @@
 
 	/* FLEXBOX */
 	.dflex{display: flex;}
+	.flex1{flex: 1;}
+	.flex2{flex: 2;}
+	.flex3{flex: 3;}
+	.flex4{flex: 4;}
+	.flex5{flex: 5;}
 	.flex_wrap{flex-wrap: wrap;}
 	.flex_wrap_no{flex-wrap: nowrap;}
 	.flex_wrap_r{flex-wrap: wrap-reverse;}
@@ -1450,7 +1455,6 @@
 	html{font-size:40%;}
 	.container, .container.fw{
 		width: 100%;
-		padding: 0 25px;
 	}
 	.hide_in_pc{display: block !important;}
 	.hide_in_mobile{display: none !important;}
