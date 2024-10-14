@@ -30,21 +30,83 @@
 		background: url(images/bg.png) no-repeat center;
 		background-size: cover;
 	}
-	.bg-about{
-		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/about.jpeg');
-		background-size: cover;
+
+	/* Hide everything except mobile-only content on mobile devices */
+	@media (max-width: 768px) {
+		.mobile-only {
+			display: flex; /* Show mobile-only content */
+			flex-direction: column;
+			padding: 30px;
+			background: var(--color-blue-1);
+		}
+		section .mobile-only ~ div {
+			display: none; /* Hide other divs outside of mobile-only */
+		}
 	}
-	.about p{
-		column-gap: 300px;
-		column-count: 1;
+
+	/* Show other content on larger screens */
+	@media (min-width: 769px) {
+		.mobile-only {
+			display: none; /* Hide mobile-only content */
+		}
+		section div {
+			display: flex; /* Show other divs */
+		}
 	}
+
+	.about{
+		background: var(--color-blue-1);
+	}
+	.about-title {
+		font-family: Helvetica;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 2px 2px 4px #000000;
+		text-transform: uppercase;
+		color: var(--color-orange-1);	
+	}
+
+	.scroll-button {
+		background: var(--color-blue-1);
+		width: 100%;
+		font-size: 48px;
+		.specs_items .item img{max-width: 50%;}
+		text-align: center;
+		transition:0.4s; -webkit-transition:0.4s;
+		a {
+			background: linear-gradient(to right, var(--color-orange-1) 30%, var(--color-orange-2) 100%);
+			color: white;
+			padding: 30px;
+			border-radius: 50px;
+			outline: 2px solid var(--color-blue-1);
+		}
+		a:link {
+			color: white;
+		}
+		a:visited {
+			color: white;
+		}
+		a:hover {
+			color: white;
+		}
+		a:active {
+			color: white;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.scroll-button {
+			font-size: 22px;
+			a {
+				padding: 10px;
+			}
+		}
+	}
+
 	.videoplayicon{
 		width: 180px; height: 180px;
 		border: 1px solid #fff;
-	}
-	.bg-specs{
-		background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/specs.jpeg');
-		background-size: cover;
 	}
 	.specs_items .item{flex-basis: 17%;}
 	.specs_items .item img{max-width: 50%;}
@@ -122,19 +184,6 @@
 	}
 	.specs .tablewrap table tr td:hover{
 		background: var(--color-blue-2);
-	}
-
-	.bg-desc1{
-		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/description-1.jpeg');
-		background-size: cover;
-	}
-	.bg-desc2{
-		background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/description-2.avif');
-		background-size: cover;
-	}
-	.bg-desc3{
-		background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url('images/description-4.jpeg');
-		background-size: cover;
 	}
 
 	.bg-orange-gradient {
