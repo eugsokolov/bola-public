@@ -4,12 +4,14 @@
 	URL:			https://layoutflow.com
 	Version:		1.0
 */
+
 	/* CONTAINER */
 	.container{
 		width: 90%;
 		margin: 0 auto;
 		max-width: 2800px;
 	}
+
 	.container.fw{
 		width: 100%;
 	}
@@ -29,35 +31,39 @@
 	.navigation{}
 	.navigation nav{}
 	.navigation nav ul{}
+
 	.navigation nav ul li{
 		float: left;
 	}
+
 	.navigation nav ul li:last-of-type{
 	}
-	.navigation nav ul li a{
-		transition:0.4s; -webkit-transition:0.4s;
+
+	.navigation nav ul li a{ transition:0.4s;
 	}
 	
 
 	.btnbox{}
 	.btnbox{}
+
 	.btn{
 		float: left;
 		width: auto;
 		height: auto;
-		padding:12px 40px;
-		border-radius:7px; -webkit-border-radius:7px;
-		transition:0.4s; -webkit-transition:0.4s;
+		padding:12px 40px; border-radius:7px; transition:0.4s;
 		background: tomato;
 		color: #fff;
 		font-size: 16px;
 	}
+
 	.btn:hover{
 		background: lawngreen;
 	}
+
 	.btn i{
 		margin-left: 5px;
 	}
+
 	.btnbox .btn{
 		margin: 0 10px;
 	}
@@ -83,18 +89,22 @@
 		margin-bottom: 20px;
 		margin: 5px;
 	}
+
 	.contactform.style1 form select {
        	height: 60px !important;
 		max-width: 400px;
 		margin-bottom: 50px;
 		color: lightgray;
     }
+
 	.contactform.style1 form select:valid {
 		color: white;
  	}
+
 	.contactform.style1 form .half{
 		width: 48% !important;
 	}
+
 	.contactform.style1 form textarea{
 		width: 100%;
 		min-width: 300px;
@@ -102,6 +112,7 @@
 		height: auto;
 		padding: 15px;
 	}
+
 	.contactform.style1 form button{
 		width: auto; height: auto; cursor: pointer;
 		padding: 20px 50px;
@@ -113,9 +124,11 @@
 		color: var(--color-blue-1);
 		background: white;
 	}
+
 	.contactform.style1 form button span{
 		margin-left: 6px;
 	}
+
 	.contactform.style1 form button.border{
 		border: 1px solid #000;
 	}
@@ -129,7 +142,8 @@
 	.smallborder{
 		position: relative;
 	}
-	.smallborder.after:after, .smallborder.before:before{
+
+	.smallborder.after::after, .smallborder.before::before{
 		position: absolute;
 		content: '';
 		z-index: 2;
@@ -137,13 +151,14 @@
 		height: 3px;
 		background: #fff;
 	}
-	.smallborder.lt:after, .smallborder.lt:before {left:0; top: 0;}
-	.smallborder.lrt:after, .smallborder.lrt:before{left:0; right: 0; top: 0; margin:0 auto 0 auto;}
-	.smallborder.lb:after, .smallborder.lb:before{left:0; bottom: 0}
-	.smallborder.lrb:after, .smallborder.lrb:before{left:0; right: 0; bottom: 0; margin:0 auto 0 auto;}
-	.smallborder.rt:after, .smallborder.rt:before{right:0; top: 0;}
-	.smallborder.rb:after, .smallborder.rb:before{right:0; bottom: 0;}
-	.smallborder.vwuit:after{
+	.smallborder.lt::after, .smallborder.lt::before {left:0; top: 0;}
+	.smallborder.lrt::after, .smallborder.lrt::before{left:0; right: 0; top: 0; margin:0 auto;}
+	.smallborder.lb::after, .smallborder.lb::before{left:0; bottom: 0}
+	.smallborder.lrb::after, .smallborder.lrb::before{left:0; right: 0; bottom: 0; margin:0 auto;}
+	.smallborder.rt::after, .smallborder.rt::before{right:0; top: 0;}
+	.smallborder.rb::after, .smallborder.rb::before{right:0; bottom: 0;}
+
+	.smallborder.vwuit::after{
 		width: 8vw; height: 0.3vw;
 	}
 
@@ -151,32 +166,35 @@
 
 
 
-@media(max-width:1200px){
+@media(width <=1200px){
 	.headermenu{}
 	.headermenu a.menucontrol{display: block;}
+
 	.headermenu a.hidemenu{
 		position: fixed;
 		right: 20px; top: 20px;
 		width: 42px; height: 42px; 
 		font-size: 30px;
-		color: #fff;
-		display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+		color: #fff; align-items: center; justify-content: center; flex-wrap: wrap;
 		z-index: 6;
 		display: none;
 	}
+
 	.navigation{
 		display: none;
 	}
+
 	.navigation nav{
 		position: fixed;
 		width: 100%; height: 100%; overflow-y: auto;
-		background: rgba(0,0,0,0.9);
+		background: rgb(0 0 0 / 90%);
 		left: 0; top: 0;
 		z-index: 5;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+
 	.navigation nav ul{
 		margin: auto;
 	}
@@ -186,7 +204,7 @@
 
 
 
-@media(max-width:640px){
+@media(width <=640px){
 	.contactform.style1 form input[type="text"],
 	.contactform.style1 form input[type="email"],
 	.contactform.style1 form select,
@@ -196,16 +214,20 @@
 		font-size: 16px;
 		margin-bottom: 20px;
 	}
+
 	.contactform.style1 form select {
 		height: 42px !important;
 		max-width: 400px;
  }
+
 	.contactform.style1 form .half{
 		width: 100% !important;
 	}
+
 	.contactform.style1 form textarea{
 		height: 120px;
 	}
+
 	.contactform.style1 form button{
 		padding: 15px 20px;
 		font-size: 15px;

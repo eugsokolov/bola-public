@@ -1,23 +1,28 @@
-@media(max-width:2200px){
+@media(width <=2200px){
 	.container{width:75%;}
 	a.logo img{width: 260px;}
+
 	nav ul li{
 		margin-right: 60px;
 	}
+
 	.about p{
 		column-gap: 150px;
 		column-count: 1;
 	}
+
 	input, textarea{
 		max-width: 400px;
 		height: 60px !important;
 		font-size: 21px !important;
 		margin-bottom: 50px !important;
 	}
+
 	textarea{
 		height: 250px !important;
 		max-width: 100%;
 	}
+
 	button{
 		padding: 20px 50px !important;
 		font-size: 24px !important;
@@ -28,14 +33,17 @@
 
 
 
-@media(max-width:1600px){
+@media(width <=1600px){
 	a.logo img{width: 160px;}
+
 	nav ul li{
 		margin-right: 40px;
 	}
+
 	.social a{
 		padding: 0 30px;
 	}
+
 	.social a:last-of-type{
 		padding-right: 0;
 	}
@@ -44,39 +52,46 @@
 
 
 
-@media(max-width:1200px){
+@media(width <=1200px){
 	.container, .container.fw{
 		width: 100%;
 		padding: 0 25px;
 	}
 	headermenu{padding: 25px;}
+
 	.headermenu a.showmenu{
 		font-size: 30px;
 		color: #fff;
 	}
+
 	header.fixed .headermenu a.showmenu{
 		color: #000;
 	}
+
 	.navigation nav ul li{
 		float: none;
 		display: table;
-		margin: 0 auto 20px auto;
+		margin: 0 auto 20px;
 		font-size: 16px;
 	}
+
 	.navigation nav ul li a{
 		display: table;
 		color: #fff !important;
 		padding: 7px 15px;
 	}
+
 	header.fixed .navigation nav ul li.active a, header.fixed .navigation nav ul li a:hover{
 		border: 1px solid #fff;
 	}
+
 	.about p{
 		column-gap: 30px;
 		column-count: 1;
 	}
 	.specs_items .item{flex-basis: 22%;}
 	.videoplayicon{width: 60px; height: 60px;border: 1px solid #fff;}
+
 	.specs .tablewrap{
 		width: 65vw
 	}
@@ -85,12 +100,14 @@
 
 
 
-@media(max-width:640px){
+@media(width <=640px){
 	.specs_items .item{flex-basis: 30%;}
+
 	a.logo{
 		width: 30%;
 		margin-left: 5vw;
 	}
+
 	input, textarea{
 		max-width: 200px;
 		height: 40px !important;
@@ -98,17 +115,21 @@
 		margin-right: 0;
 		margin-bottom: 20px !important;
 	}
+
 	textarea{
 		height: 150px !important;
 		max-width: 100%;
 	}
+
 	button{
 		padding: 10px 20px !important;
 		font-size: 15px !important;
 	}
+
 	.social a{
 		padding: 0 20px 0 0;
 	}
+
 	.social a:last-of-type{
 		padding-right: 0;
 	}

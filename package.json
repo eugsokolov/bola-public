@@ -1,0 +1,16 @@
+{
+  "name": "bola-public",
+  "version": "1.0.0",
+  "description": "bola",
+  "main": "index.html",
+  "scripts": {
+    "lint": "npx stylelint {**/*.css,js} --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}

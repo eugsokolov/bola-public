@@ -7,7 +7,9 @@ function validateHuman(honeypot) {
   if (honeypot) {  //if hidden form filled up
     console.log("Robot Detected!");
     return true;
-  } else {
+  }
+
+ else {
     console.log("Welcome Human!");
   }
 }
@@ -86,7 +88,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   if (!validEmail(data.email) ) {   // if email is not valid show error
     document.getElementById('email-invalid-message').style.display = 'block';
     return false;
-  } else {
+  }
+
+ else {
     function emailSent() {
       document.getElementById('email-invalid-message').style.display = 'none';
       document.getElementById('gform').style.display = 'none';

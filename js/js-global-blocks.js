@@ -20,7 +20,9 @@
 			let getheaderdiv = document.getElementsByTagName('header')[0].classList;
 			if(document.documentElement.scrollTop > 100){
 				getheaderdiv.add('fixed');
-			}else{
+			}
+
+else{
 				getheaderdiv.remove('fixed');
 			}
 		}
