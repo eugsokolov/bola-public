@@ -116,6 +116,7 @@ header.fixed nav ul li a {
     padding: 30px;
     border-radius: 50px;
     outline: 2px solid var(--color-blue-1);
+	text-decoration: none;
   }
 
   a:link {
@@ -238,6 +239,36 @@ header.fixed nav ul li a {
 
 .specs .tablewrap table tr td:hover {
   background: var(--color-blue-2);
+}
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--color-blue-1);
+}
+.faq .accordion-button {
+	color: white;
+}
+.faq .accordion-button:not(.collapsed) {
+	color: var(--color-orange-1);
+}
+.faq .accordion-body {
+	font-size: 20px;
+	color: white;
+}
+.faq .accordion {
+	--bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+	--bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.faq .title {
+	font-family: Helvetica;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000;
+	text-transform: uppercase;
+	color: var(--color-orange-1);
 }
 
 .bg-orange-gradient {
