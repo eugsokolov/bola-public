@@ -2011,6 +2011,10 @@ th {
 }
 
 /* PADDING VALUES */
+.p_80 {
+  padding: 80px;
+}
+
 .pb_0 {
   padding-bottom: 0;
 }
@@ -7102,6 +7106,10 @@ th {
 
   .mr_200_mobile {
     margin-right: 200px !important;
+  }
+
+  .p_10_mobile {
+    padding: 10px !important;
   }
 
   .pb_5_mobile {
