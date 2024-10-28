@@ -58,7 +58,7 @@ header.fixed nav ul li a {
 /* Hide everything except mobile-only content on mobile devices */
 @media (width <= 768px) {
   .mobile-only {
-    display: flex; /* Show mobile-only content */
+    display: inherit; /* Show mobile-only content */
     flex-direction: column;
     padding: 30px;
     background: var(--color-blue-1);
@@ -76,7 +76,7 @@ header.fixed nav ul li a {
   }
 
   section div {
-    display: flex; /* Show other divs */
+    display: inherit; /* Show other divs */
   }
 }
 
