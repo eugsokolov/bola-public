@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.bolabuddy.app",
+        "sha256_cert_fingerprints": [
+          "66:B0:DF:B9:3A:6B:CF:8D:1D:95:3C:40:1D:C6:49:17:72:4B:3C:68:99:1C:E0:57:E3:CE:33:B9:97:8C:18:91"
+        ]
+      }
+    }
+  ]
+  
