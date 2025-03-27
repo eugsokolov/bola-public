@@ -4,7 +4,16 @@
       "details": [
         {
           "appID": "6742475755.com.bolabuddy.app",
-          "paths": ["/referral", "*"]
+          "components": [
+          {
+            "/": "/*",
+            "comment": "Matches any URL and allows opening as a universal link."
+          },
+          {
+            "/": "/referral/*",
+            "comment": "Matches any URL with a path that starts with /redirect/ and instructs the system not to open it as a universal link."
+          }
+        ]
         }
       ]
     }
