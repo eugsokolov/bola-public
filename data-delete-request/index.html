@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BolaBuddy - Account or Data Deletion Request</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fonts/fa/css/all.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style-global-blocks.css" />
+    <link rel="stylesheet" href="../style-global.css" />
+    <link rel="stylesheet" href="../style-responsive.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <header
+      class="p_fixed left top w_100 zindex_5 ts_0_5 dflex flex_wrap jc_sb ai_c"
+    >
+      <a href="/" class="logo dflex jc_fe w_15">
+        <img src="../images/logo-primary.svg" alt="" class="logo-primary" />
+        <img src="../images/logo-secondary.svg" alt="" class="logo-secondary" />
+      </a>
+
+      <div class="headermenu">
+        <a href="javascript:void()" class="showmenu menucontrol"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <a href="javascript:void()" class="hidemenu menucontrol"
+          ><i class="fa-solid fa-times"></i
+        ></a>
+        <div class="navigation">
+          <nav id="headnav">
+            <ul class="fs_2_3_rem">
+              <li><a href="/">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-orange-gradient f_l_w_100 pt_200" id="delete-account">
+      <div
+        class="inner ptb_200 ptb_125_fhd ptb_60_tablet f_l_w_100 bg_gainsboro"
+      >
+        <div class="container text_white dflex fd_c">
+          <h3 class="tt_u fs_4_rem mb_80 mb_20_tablet text_center">
+            Request Account or Data Deletion
+          </h3>
+          <div class="contactform style1 jc_c">
+            <form
+              id="gform"
+              method="POST"
+              action="https://script.google.com/macros/s/AKfycbxT16GIGd9qCkAYN211rzUijONpFLSLG9A0GvvAPT8Bolwux7SYizsR2T8-0ByKDPr1pw/exec"
+              onsubmit="return validateForm()"
+            >
+              <div class="dflex fd_c flex_wrap jc_sb">
+                <div class="w_100 dflex fd_c jc_sb">
+                  <div id="email-invalid-message" class="email-invalid">
+                    Please enter a valid email!
+                  </div>
+                  <input
+                    class="form-control w_100"
+                    id="email"
+                    name="email"
+                    placeholder="Email Address *"
+                    type="email"
+                    required
+                  />
+                  <select
+                    class="form-control w_100"
+                    id="deletionType"
+                    name="deletionType"
+                    required
+                  >
+                    <option value="" disabled selected>Request Type *</option>
+                    <option value="Account Deletion">Account Deletion (delete account and all data)</option>
+                    <option value="Data Deletion">Data Deletion (keep account, delete personal data)</option>
+                  </select>
+                </div>
+                <div class="w_100">
+                  <textarea
+                    id="comments"
+                    name="comments"
+                    placeholder="Reason for Deletion (optional)"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="w_100 dflex jc_c">
+                  <button type="submit">Submit Deletion Request</button>
+                </div>
+              </div>
+              <div class="w_100 dflex jc_c mt_20">
+                <label class="text_center">
+                  <input type="checkbox" required>
+                  <span class="dflex w_100">
+                    I understand that this action cannot be undone and the requested data will be permanently deleted *
+                  </span>
+                </label>
+              </div>
+            </form>
+            <div style="display: none" id="thankyou_message">
+              <h2>
+                Your account/data deletion request has been submitted! <br />
+                We will process your request within 30 days.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-orange-gradient f_l_w_100 ptb_175 ptb_100_fhd ptb_50_tablet"
+    >
+      <div class="container dflex fd_r jc_sb text_white">
+        <div class="copyright fs_1_8_rem fs_15_tablet w_100_mobile">
+          Copyright &copy; <span id="year"></span>
+          <a href="/" class="border_none">BolaBuddy</a>
+        </div>
+        <div class="social dflex jc_fe fs_1_8_rem fs_15_tablet w_100_mobile">
+          <a href="https://www.instagram.com/bolabuddy_smartmooring/"
+            ><i class="text_white fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/js-global-blocks.js"></script>
+    <script src="../js/navjs.js"></script>
+    <script src="../css/bootstrap.bundle.min.js"></script>
+    <script>
+      // Update copyright year
+      document.getElementById('year').innerText = new Date().getFullYear();
+      
+      // Form validation
+      function validateForm() {
+        const email = document.getElementById('email').value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!emailRegex.test(email)) {
+          document.getElementById('email-invalid-message').style.display = 'block';
+          return false;
+        }
+        document.getElementById('deletionForm').style.display = 'none';
+        document.getElementById('thankyou_message').style.display = 'block';
+        return true;
+      }
+    </script>
+  </body>
+</html>
