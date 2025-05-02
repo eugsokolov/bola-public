@@ -5,15 +5,24 @@
         {
           "appID": "BTJDD3WG7K.com.bolabuddy.app",
           "components": [
-          {
-            "/": "/*",
-            "comment": "Matches any URL and allows opening as a universal link."
-          },
-          {
-            "/": "/referral/*",
-            "comment": "Matches any URL with a path that starts with /redirect/ and instructs the system not to open it as a universal link."
-          }
-        ]
+            {
+              "#": "no_universal_links",
+              "exclude": true,
+              "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+            },
+            {
+              "/": "/app*",
+              "comment": "Matches any URL whose path starts with /app*"
+            },
+            {
+              "/": "/user-reset-password/*",
+              "comment": "Matches any URL that starts with /user-reset-password/"
+            },
+            {
+              "/": "/referral/*",
+              "comment": "Matches any URL that starts with /referral/"
+            }
+          ]
         }
       ]
     }
