@@ -11,16 +11,12 @@
               "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
             },
             {
-              "/": "/app*",
-              "comment": "Matches any URL whose path starts with /app*"
+              "/": "/app-*",
+              "comment": "Matches any URL whose path starts with /app-*"
             },
             {
               "/": "/user-reset-password/*",
               "comment": "Matches any URL that starts with /user-reset-password/"
-            },
-            {
-              "/": "/referral/*",
-              "comment": "Matches any URL that starts with /referral/"
             }
           ]
         }
