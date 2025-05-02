@@ -133,24 +133,11 @@
 
     <script src="../js/js-global-blocks.js"></script>
     <script src="../js/navjs.js"></script>
+    <script data-cfasync="false" src="../js/form-submission-handler.js"></script>
     <script src="../css/bootstrap.bundle.min.js"></script>
     <script>
       // Update copyright year
       document.getElementById('year').innerText = new Date().getFullYear();
-      
-      // Form validation
-      function validateForm() {
-        const email = document.getElementById('email').value;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-        if (!emailRegex.test(email)) {
-          document.getElementById('email-invalid-message').style.display = 'block';
-          return false;
-        }
-        document.getElementById('deletionForm').style.display = 'none';
-        document.getElementById('thankyou_message').style.display = 'block';
-        return true;
-      }
     </script>
   </body>
 </html>
