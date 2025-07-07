@@ -13,10 +13,6 @@
             {
               "/": "/app-*",
               "comment": "Matches any URL whose path starts with /app-*"
-            },
-            {
-              "/": "/user-reset-password/*",
-              "comment": "Matches any URL that starts with /user-reset-password/"
             }
           ]
         }
